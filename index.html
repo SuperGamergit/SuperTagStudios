@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ADD8E6;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background-color: #FA8072;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-buttons button {
+            background-color: #FA8072;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Website!</h1>
-    <p>This is hosted using GitHub Pages.</p>
+    <header>GitHub Project</header>
+    <nav class="nav-buttons">
+        <button onclick="showPage('main')">Main Page</button>
+        <button onclick="showPage('privacy')">Privacy Policy</button>
+        <button onclick="showPage('wiki')">Wiki</button>
+    </nav>
+    <div class="content" id="content">
+        <h2>Welcome to the Main Page</h2>
+        <p>This is the main content area.</p>
+    </div>
+
+    <script>
+        function showPage(page) {
+            let content = document.getElementById('content');
+            if (page === 'main') {
+                content.innerHTML = '<h2>Welcome to the Main Page</h2><p>This is the main content area.</p>';
+            } else if (page === 'privacy') {
+                content.innerHTML = '<h2>Privacy Policy</h2><p>Your privacy matters.</p>';
+            } else if (page === 'wiki') {
+                content.innerHTML = '<h2>Wiki</h2><p>Welcome to the project wiki.</p>';
+            }
+        }
+    </script>
 </body>
 </html>
