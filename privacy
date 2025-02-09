@@ -1,0 +1,54 @@
+    <script>
+        function showPage(page) {
+            let content = document.getElementById('content');
+            } 
+                content.innerHTML = `
+                    <h2>Privacy Policy</h2>
+                    <h3>Last updated: May 8, 2024</h3>
+                    <h4>Policy Made By: SuperTagStudios</h4>
+                    <h4>1. Definitions</h4>
+                    <p><b>Oculus/Meta ID:</b> A unique and consistent string identifying a specific Oculus/Meta account.</p>
+                    <p><b>IP Address:</b> A unique character string your device uses for internet communication.</p>
+                    <p><b>Headset:</b> The device on which you are running the game.</p>
+                    <p><b>I, we, us, our, and SuperTagStudios:</b> Refers to the developer(s).</p>
+                    <p><b>Services and Game:</b> Games and services developed and published by SuperTagStudios.</p>
+                    
+                    <h4>2. Data Collection</h4>
+                    <p><b>A. Oculus/Meta ID:</b> Your Oculus/Meta ID is collected by PlayFab for logging into your PlayFab/SuperTagStudios account.</p>
+                    <p><b>B. IP Address:</b> Your IP address is stored on your PlayFab/SuperTagStudios account.</p>
+                    <p><b>C. Removal of Account:</b> Removal of PlayFab/SuperTagStudios Account: If you are dissatisfied with the collected data and wish to have your account and associated data deleted, please contact us as described in Section 6 below.</p>
+                    
+                    <h4>3. Use of Data</h4>
+                    <p><b>Information Use</b> We use your information for various business purposes, including providing our services, and for administrative and moderation purposes, as described below.</p>
+                    <p><b>IP Address</b> As mentioned in Section 2A, your IP address is stored on your PlayFab/SuperTagStudios account and is only used for IP bans and other moderation purposes.</p>
+                    <p><b>Third-Party Services:</b> We do not control our third-party services. Please review their privacy policies.</p>
+                    <ul>
+                        <li><a href="https://www.microsoft.com/privacy/privacystatement" target="_blank">PlayFab: Privacy Policy</a></li>
+                        <li><a href="https://dashboard.photonengine.com/account/privacyandcookiepolicy/" target="_blank">Photon: Privacy Policy</a></li>
+                    </ul>
+                    
+                    <h4>4. Children’s Information</h4>
+                    <p>Our services are not intended for children under 13 (or other age as required by local law), and we do not knowingly collect personal information from children. If you are a </p>
+                    <p>parent or guardian and wish to review, modify, or delete information collected from your child, please contact us as described in Section 6 below. If we become aware that a</p>
+                    <p>child has provided us with personal information in violation of applicable law, we will delete the collected information and take appropriate actions.</p>
+                    
+                    <h4>5. Other Provisions</h4>
+                    <p><b>Third-Party Websites/Applications: Our services may contain links to other websites/applications, and other websites/applications may reference or link to our services. These </p>
+                    <p><b>third-party services are not under our control, and we encourage our users to review the privacy policies of each website and application they interact with. We do not endorse, </p>
+                    <p><b></p>
+                    <p><b></p>
+                    <p><b>Supervisory Authority: If you are located in the European Economic Area, Switzerland, the United Kingdom, or Brazil, you have the right to lodge a complaint with a supervisory</p>
+                    <p><b>authority if you believe our processing of your personal information violates applicable law.</p>
+                    <p><b></p>
+                    <p><b></p>
+                    <p><b>Changes to our Privacy Policy: We may revise this Privacy Policy at our discretion. If there are significant changes, we will notify you as required by applicable law. By </p>
+                    <p><b>continuing to use our services after the new Privacy Policy takes effect, you accept the updated policy.</p>
+                    
+                    <h4>6. Contact Us</h4>
+                    <p><b>If you have any questions about our privacy practices or this Privacy Policy or wish to exercise your rights detailed in this Privacy Policy</p>
+                    <p>Contact us: <a href="mailto:supertagstudioshelp@gmail.com">supertagstudioshelp@gmail.com</a></p>
+                `;
+        }
+    </script>
+</body>
+</html>
