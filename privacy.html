@@ -1,7 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperTag Studios</title>
+    <script>
+        // This function sets the favicon from an external URL
+        function setFaviconFromURL(url) {
+            const link = document.createElement('link');
+            link.rel = 'icon';
+            link.type = 'image/png';
+            link.href = url;
+            document.head.appendChild(link);
+        }
+
+        // Call the function with the image URL
+        window.onload = function() {
+            setFaviconFromURL('https://cdn.discordapp.com/attachments/1334899096137236531/1334899310659244032/New_Project_7.png?ex=679e355c&is=679ce3dc&hm=160142e6897730699f494359a02d1c3d04ece318540496a1493b40c1b2339d81&');
+        };
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #404040;
+            background-image: url('https://media.discordapp.net/attachments/1334899096137236531/1334982736817164298/New_Project_7.png?ex=679e830f&is=679d318f&hm=cc168e4b5427c4dd69780b294d7f6ec228ceab6556ce898d40395ea2567545c9&=&format=webp&quality=lossless&width=687&height=386'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        header {
+            background-color: #2C2C2C;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-buttons button {
+            background-color: #FA8072;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>SuperTag Studios</header>
+    <nav class="nav-buttons">
+        <button onclick="showPage('main')">Main Page</button>
+        <button onclick="showPage('privacy')">Privacy Policy</button>
+        <button onclick="showPage('wiki')">Wiki</button>
+    </nav>
+    <div class="content" id="content">
+        <h2>Welcome to <b>SuperTag Studios!</b></h2>
+    </div>
+
     <script>
         function showPage(page) {
             let content = document.getElementById('content');
-            } 
+            if (page === 'main') {
+                content.innerHTML = '<h2>Welcome to <b>SuperTag Studios!</b></h2>';
+            } else if (page === 'privacy') {
                 content.innerHTML = `
                     <h2>Privacy Policy</h2>
                     <h3>Last updated: May 8, 2024</h3>
@@ -14,7 +89,7 @@
                     <p><b>Services and Game:</b> Games and services developed and published by SuperTagStudios.</p>
                     
                     <h4>2. Data Collection</h4>
-                    <p><b>A. Oculus/Meta ID:</b> Your Oculus/Meta ID is collected by PlayFab for logging into your PlayFab/SuperTagStudios account.</p>
+                    <p><b>A. Oculus/Meta ID:</b> Your Oculus/Meta ID is collected by PlayFab for logging into your PlayFab/SuperTagStudiosGame account.</p>
                     <p><b>B. IP Address:</b> Your IP address is stored on your PlayFab/SuperTagStudios account.</p>
                     <p><b>C. Removal of Account:</b> Removal of PlayFab/SuperTagStudios Account: If you are dissatisfied with the collected data and wish to have your account and associated data deleted, please contact us as described in Section 6 below.</p>
                     
@@ -48,6 +123,9 @@
                     <p><b>If you have any questions about our privacy practices or this Privacy Policy or wish to exercise your rights detailed in this Privacy Policy</p>
                     <p>Contact us: <a href="mailto:supertagstudioshelp@gmail.com">supertagstudioshelp@gmail.com</a></p>
                 `;
+            } else if (page === 'wiki') {
+                content.innerHTML = '<h2>Wiki</h2><p>Currently work in progress.</p>';
+            }
         }
     </script>
 </body>
